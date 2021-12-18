@@ -1,0 +1,18 @@
+projection;
+strict;
+use draft;
+
+define behavior for ZDEMO_C_APP_TYPE alias ApplicationType
+use etag
+
+{
+  use create;
+  use update;
+  use delete;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+}

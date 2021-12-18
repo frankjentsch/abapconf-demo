@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition forZDEMO_C_APP_TYPE'
+define service ZDEMO_APP_TYPE_SD {
+  expose ZDEMO_C_APP_TYPE as ApplicationType;
+}

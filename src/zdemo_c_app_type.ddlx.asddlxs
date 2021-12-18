@@ -1,0 +1,30 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'Application Type',
+    typeNamePlural: 'Application Types'
+  }
+}
+annotate view ZDEMO_C_APP_TYPE with
+{
+  @UI.facet: [ {
+    id: 'idIdentification',
+    type: #IDENTIFICATION_REFERENCE,
+    label: 'Application Type',
+    position: 10
+  } ]
+  @UI.hidden: true
+  apptypeuuid;
+
+  @UI.lineItem: [ {
+    position: 10 ,
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 10
+  } ]
+  apptypename;
+
+  @UI.hidden: true
+  locallastchangedat;
+}
